@@ -1,0 +1,38 @@
+program ABC;
+    var
+    a, b, c: integer;
+    begin
+        writeln ('Ingrese A: ');
+        ReadLn(a);
+        writeln ('Ingrese B: ');
+        ReadLn(b);
+        writeln ('ingrese C: ');
+        ReadLn(c);
+        if (a>b) then
+            begin
+                if (b>c) then
+                    begin
+                        writeln ('El orden es ', a, b, c);
+                    end
+                else 
+                    writeln('El orden es ', a, c, b);
+            end
+        else if (b>a) then
+            begin
+                if (a>c) then
+                    begin
+                        writeln ('El orden es ', b, a, c);
+                    end
+                else
+                writeln ('El orden es ', b, c, a);
+            end
+        else if (c>a) then
+            begin
+                if (a>b) then
+                    begin
+                        writeln('El orden es ', c, a, b);
+                    end
+                else
+                writeln ('El orden es ', c, b, a)
+            end
+    end.
