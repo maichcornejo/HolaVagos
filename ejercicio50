@@ -1,0 +1,17 @@
+program Ejercicio50;
+    const 
+        max= 50;
+    type
+        tNum1 = array [1..max] of integer;
+    var 
+        i: integer;
+        j: integer;
+        num1:  tNum1; 
+        num2: tNum1;
+        resultado: tNum1; 
+    begin
+        randomize;
+        for num1 := 1 to max do 
+            j:= random(10);
+            writeln(j);
+    end.
